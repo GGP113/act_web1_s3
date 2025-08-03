@@ -3,29 +3,22 @@ Utiliza un ciclo `while` para generar los primeros 15 números de la secuencia d
 Muestra cada número de la secuencia.
 */
 
-
-let numero = 15;
+let numero = 13;
 let contador = 0;
 
 let f0 = 0;
 let f1 = 1;
 
-
+console.log(f0);
+console.log(f1);
 while (contador < numero) {
+  let fn = f0 + f1;
 
-    let fn =  f0 +f1;
+  console.log(f0 + "+" + f1 + " = " + fn);
 
-    console.log(f0 + "+" + f1 + " = " + fn)
+  f0 = f1;
 
-    f0 = f1
+  contador++;
 
-    contador ++
-
-    f1 = fn
-
-    
-
-    
-
-
+  f1 = fn;
 }
